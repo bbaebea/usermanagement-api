@@ -13,7 +13,7 @@ class AuthController extends Controller
      * Login
      * POST: /api/login
      * @param Request
-     * @param \Illuminate\Http\Response
+     * @return \Illuminate\Http\Response
      */
     public function login(Request $request){
         $validator = validator($request->all(), [
